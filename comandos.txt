@@ -1,0 +1,91 @@
+git version -- saber que version tienes 
+
+git help -- nos aparecen todos los comandos
+
+------------------------
+git init -- inicias el repositorio
+
+git status -s -- vemos lo que esta pasando
+
+git add . -- toma todo los cambios
+
+git commit -m 'primer comit' -- tienes que hacer commit siempre despues de tomar los cambios
+
+git log --oneline -- muestra la lista de commit del mas reciente al mas antiguo
+----------------------------------------------------------------------------------
+SI YA CREASTE INIT Y SOLO QUIERES GUARDAR TIENES QUE PONER LO SIGUIENTE
+
+git add . -- toma todo los cambios
+
+git commit -m 'primer comit' -- tienes que hacer commit siempre despues de tomar los cambios
+-----------------------------------------------------------------------------
+
+CREAS TU REPOSITORIO EN LA PAGINA DE GITHUB
+
+pones git remote add origin (tu link de github)
+
+git branch -M master
+
+git push -u origin master
+
+se sube a la nube y listo.
+----------------------------------------------------------------------------
+
+SI YA ESTA EN LA NUBE PARA GUARDAR EN EL GITHUB ES
+
+git add .
+
+git commit -m 'tu mensaje'
+
+git push
+
+y listo
+
+----------------------------------------------------------------
+
+git reflog -- historial de todos los comits con sus ids
+---------------------------------------------------------------------------
+ELIMINAR UN COMMIT EN ESPECIFICO
+
+git revert (y el id del commit)
+
+:q enter
+----------------------------------------------------------------
+HACER RAMAS
+
+git branch ---- para saber en que rama estas
+
+git branch (nombre de la rama) -- para crear una rama
+
+git checkout (nombre de la rama) -- para viajar entre ramas
+
+git log --oneline --graph ---- 
+
+si trabajas y quieres guardar , poner git push -- te va a salir como lo debes de poner, lo haces y listo
+
+como saber en que rama estas? --- git branch
+------------------------------------------------------------------------------------
+
+PARA UNIR RAMAS
+
+tienes que ir a la rama principal y luego poner -- git merge (nombre de la rama a combinar)
+
+como eliminar una rama?? -- git branch -d (nombre de la rama)
+---------------------------------------------------------------------------
+QUE PASA SI SE TRABAJO LO MISMO EN DIFERENTE RAMAS Y HACEMOS MERGE?
+
+te va a salir un error/advertencia mostrando lo que se hizo de las 2 ramas, el VSC te va a dar opcion para escoger uno u el otro o ambos, seleccionar, luego haces 
+git add . 
+git commit -m 'solucion al conflicto tal...'
+
+
+
+
+
+
+
+
+
+
+
+
